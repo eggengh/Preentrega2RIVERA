@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@media (max-width: 800px) {
+    
+    .contenedor{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:50px;
+        padding: 45px 0px;
+    }
+
+    .galeria{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pie {
+        display: flex;
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+    
+
+body{ 
+    background-color: #D5DBD7;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+nav{
+    background-color: white;
+    padding: 1em 2em;
+    align-items: center;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+h1{
+    color: purple;
+}
+
+h2{
+    padding: 10px
+    
+}
+
+.fondo_h2{
+    background-color: blueviolet;
+}
+
+.carrusel1{
+    position: relative;
+    top: 200px; left: 100px;
+    
+}
+
+.foto_tamaño{
+    width: 33.1%;
+}
+
+.foto_altura{
+    max-height: 36.5em;
+    padding: 0;
+}
+
+.tamano_icono{
+    width: 2.5em;
+
+}
+
+figure img{
+    max-width: 13em;
+    max-height: 13em;
+}
+
+
+section h2{
+    position: relative;
+    text-align: center;
+}
+
+.foto_promociones{
+    position: relative;
+    left:  30%;
+}
+
+.icono_posicion{
+    position: relative;
+    left: 5%;
+}
+
+.logo_tamano{
+    width: 10em;
+}
+
+main h1,p{
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, .7);
+    font-family: Roboto, sans-serif;
+    margin: 20px 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "nav nav nav"
+    "productos productos productos"
+    "pie pie pie";
+}
+
+#nav1{
+    grid-area: nav;
+}
+
+
+#pie{
+    grid-area: pie;
+}
+
+#productos{
+    grid-area: productos;
+}
+
+#productos .galeria{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+    
+#productos .galeria figure{
+        text-align: center;
+    } 
+
+        #productos .galeria figure img{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        #productos .galeria figure figcaption{
+            font-size: 1rem;
+            padding: 10px 0;
+            background-color: white;
+        }
+
+        #productos .galeria p.price{
+            color: #676565;
+            padding-bottom: 10px;
+            background-color: white;
+        }
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 2em;
+    
+}
+
+.logo_redes{
+    position: relative;
+    padding: 10px;
+    left: 2em;
+}
+
