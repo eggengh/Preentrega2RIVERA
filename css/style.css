@@ -89,8 +89,10 @@ h2{
     
 }
 
-.foto_tamaño{
-    width: 33.1%;
+.foto_tamano{
+    width: 50%;
+    max-height:min-content;
+    margin: auto;
 }
 
 .foto_altura{
@@ -100,7 +102,6 @@ h2{
 
 .tamano_icono{
     width: 2.5em;
-
 }
 
 figure img{
@@ -115,17 +116,26 @@ section h2{
 }
 
 .foto_promociones{
-    position: relative;
-    left:  30%;
+   display: flex;
+   justify-content: center;
 }
 
+.promociones{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
 .icono_posicion{
-    position: relative;
-    left: 5%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .logo_tamano{
     width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main h1,p{
@@ -193,7 +203,10 @@ main h1,p{
 
 footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
     background-color: whitesmoke;
     padding: 2em;
     

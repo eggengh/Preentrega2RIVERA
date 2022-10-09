@@ -6,48 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AC SHOES</title>
     <link rel="shortcut icon" href="img/logo_size_invert.jpg" type="image/x-icon">
+    
+    <!-- mi css -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
 </head>
 <body>
     <!-- inicia nav -->
-    <nav>
-        <a href="index.html">
-        <img src="img/logopagina.png" class="logo_tamano" alt="logo de ac shoes">
-        </a>
-
-        <div>
-        <ul>
-            <li>
-                <a href="pages/Hombres_zapatillas.html">Hombre</a>
-            </li>
-            <li>
-                <a href="pages/Mujeres.html">Mujer</a>
-            </li>
-            <li>
-                <a href="pages/Ninos.html">Niños</a>
-            </li>
-            <li>
-                <a href="pages/Nosotros.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="#contacto">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-violet" id="botonera">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logopagina.png" alt="" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg viewBox="0 0 100 80" width="40" height="40" >
+              <rect width="100" height="10"></rect>
+              <rect y="30" width="100" height="10"></rect>
+              <rect y="60" width="100" height="10"></rect>
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hombre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mujer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Niños</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <!-- ends nav -->
+
+    <!-- inicia header -->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/carrusel_1.jpg" class="d-block w-50 foto_tamano" alt="vos si le pones los alts a las imgs">
+            </div>
+            <div class="carousel-item">
+              <img src="img/carrusel_2.jpg" class="d-block w-50 foto_tamano" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/carrusel_3.jpg" class="d-block w-50 foto_tamano" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </header>
+      <!-- end header -->
 
 
     <!-- inicia main -->
     <main>
         <section>
-            <img src="img/carrusel_1.jpg" class="foto_tamaño foto_altura"  alt="Zapatillas en un stand">
-            <img src="img/carrusel_2.jpg" class="foto_tamaño foto_altura" alt="Zapatillas en un stand">
-            <img src="img/carrusel_3.jpg" class="foto_tamaño foto_altura" alt="Zapatillas en un stand">
-            
+        
             <h2 class="fondo_h2">Promociones!</h2>
-            
-            <img src="img/promociones.jpg" class="foto_promociones" alt="zapatillas en promocion">
 
+            <div class="promociones">
+            <img src="img/promociones.jpg" alt="" class="img-fluid">
+            </div>
         </section>
 
         <section>
@@ -86,5 +127,7 @@
 
     </footer>
     <!-- ends footer -->
+
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
