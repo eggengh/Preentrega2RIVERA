@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 @media (max-width: 800px) {
     
@@ -9,7 +9,6 @@
         margin: auto;
         display:grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:50px;
         padding: 45px 0px;
     }
 
@@ -41,10 +40,11 @@ body{
 h1{
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: 1rem;
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: initial;
+    background-color: blueviolet;
 }
 
 @keyframes aparecer{
@@ -54,7 +54,7 @@ h1{
 
 nav{
     background-color: white;
-    padding: 1em 2em;
+    padding: 10px;
     align-items: center;
 
 }
@@ -70,14 +70,9 @@ nav ul li{
     margin-right: 20px;
 }
 
-h1{
-    color: purple;
-}
-
-h2{
-    padding: 10px
-    
-}
+h2, h1{
+    padding: 10px;
+    }
 
 .fondo_h2{
     background-color: blueviolet;
@@ -91,8 +86,8 @@ h2{
 
 .foto_tamano{
     width: 50%;
-    max-height:min-content;
-    margin: auto;
+    max-height: 1000px;
+    margin:0 auto;
 }
 
 .foto_altura{
@@ -138,30 +133,40 @@ section h2{
     align-items: center;
 }
 
-main h1,p{
+main {
     text-transform: uppercase;
-    font-size: 1rem;
     text-align: center;
-    padding: 20px 0;
-    background-color: rgba(255, 255, 255, .7);
     font-family: Roboto, sans-serif;
     margin: 20px 0;
 }
 
+#descripcion {
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
 .contenedor{
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    background-color: whitesmoke;
     grid-template-areas: 
-    "nav nav nav"
     "productos productos productos"
     "pie pie pie";
+}
+
+main h1, section h2{
+    font-size: 1.5rem;
+   font-family: Roboto, sans-serif;
+
 }
 
 #nav1{
     grid-area: nav;
 }
-
 
 #pie{
     grid-area: pie;
