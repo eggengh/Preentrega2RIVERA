@@ -1,43 +1,19 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-@media (max-width: 800px) {
-    
-    .contenedor{
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding: 45px 0px;
-    }
 
-    .galeria{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #pie {
-        display: flex;
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
-}
-    
 
 body{ 
     background-color: #D5DBD7;
     font-family: 'Roboto', sans-serif;
-}
-
+} */
+/* 
 *{
     margin: 0;
     padding: 0;
-}
+} */
 
-h1{
+/* h1{
     display: flex;
     justify-content: center;
     font-size: 1rem;
@@ -45,110 +21,54 @@ h1{
     animation-name: aparecer;
     animation-iteration-count: initial;
     background-color: blueviolet;
-}
+} */
 
-@keyframes aparecer{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
 
-nav{
-    background-color: white;
+
+
+/* h2, h1{
     padding: 10px;
-    align-items: center;
+    } */
 
-}
-
-nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-
-nav ul li{
-    margin-right: 20px;
-}
-
-h2, h1{
-    padding: 10px;
-    }
-
-.fondo_h2{
+/* .fondo_h2{
     background-color: blueviolet;
-}
+} */
 
-.carrusel1{
-    position: relative;
-    top: 200px; left: 100px;
-    
-}
 
-.foto_tamano{
-    width: 50%;
-    max-height: 1000px;
-    margin:0 auto;
-}
 
-.foto_altura{
+
+
+/* .foto_altura{
     max-height: 36.5em;
     padding: 0;
-}
-
-.tamano_icono{
-    width: 2.5em;
-}
-
-figure img{
-    max-width: 13em;
-    max-height: 13em;
-}
+} */
 
 
-section h2{
+
+/* figure img{
+    
+} */
+
+
+/* section h2{
     position: relative;
     text-align: center;
-}
+} */
 
-.foto_promociones{
-   display: flex;
-   justify-content: center;
-}
 
-.promociones{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-.icono_posicion{
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-}
 
-.logo_tamano{
-    width: 10em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-main {
+
+
+/* main {
     text-transform: uppercase;
     text-align: center;
     font-family: Roboto, sans-serif;
     margin: 20px 0;
-}
-
-#descripcion {
-    font-size: 1rem;
-    text-align: center;
-    padding: 10px;
-
-}
+} */
 
 
-.contenedor{
+/* .contenedor{
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: repeat(2, auto);
@@ -156,35 +76,30 @@ main {
     grid-template-areas: 
     "productos productos productos"
     "pie pie pie";
-}
+} */
 
-main h1, section h2{
+/* main h1, section h2{
     font-size: 1.5rem;
    font-family: Roboto, sans-serif;
 
-}
+} */
 
-#nav1{
-    grid-area: nav;
-}
 
-#pie{
-    grid-area: pie;
-}
 
-#productos{
+
+/* #productos{
     grid-area: productos;
-}
+} */
 
-#productos .galeria{
+/* #productos .galeria{
     margin: 20px;
     display: flex;
     justify-content: space-around;
 
 
-}
+} */
     
-#productos .galeria figure{
+/* #productos .galeria figure{
         text-align: center;
     } 
 
@@ -203,10 +118,10 @@ main h1, section h2{
             color: #676565;
             padding-bottom: 10px;
             background-color: white;
-        }
+        } */
 
 
-footer{
+/* footer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,5 +136,5 @@ footer{
     position: relative;
     padding: 10px;
     left: 2em;
-}
+} */
 
